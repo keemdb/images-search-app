@@ -1,4 +1,4 @@
-import { defineConfig, formatPostcssSourceMap } from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import {fileURLToPath, URL} from 'url'
 
@@ -20,7 +20,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "./src/assets/styles/main.scss`,
+        additionalData: `@import "./src/assets/styles/main.scss";`,
       }
     }
   }
