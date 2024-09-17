@@ -1,9 +1,11 @@
+import CommonHeader from '@/components/common/header/CommonHeader'
 import styles from "./styles/index.module.scss"
 
 function index() {
   return (
 	<div className={styles.page}>
     {/* Header */}
+    <CommonHeader />
     {/* Nav */}
     <div className={styles.page__contents}>
       <div className={styles.page__contents__introBox}>
